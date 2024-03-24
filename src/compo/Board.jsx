@@ -24,6 +24,7 @@ for(let logic of winnerLogic){
 return false;
 
 };
+
 const isWinner=CheckWinner();
 
 const handleClick=(index)=>{
@@ -33,12 +34,15 @@ const handleClick=(index)=>{
  setState(copyState);
  setIsXTurn(!isXTurn);
 }
+function refreshPage() {
+  window.location.reload(false);
+}
 
 
     return<>
             <div className="board-container">
              {isWinner ? (<div className="finalPage"><center><h1 className="winner">and the winner is 🎉 {isWinner}🎊</h1>
-             <h4>Please Refresh page for play again</h4><div className="footer">please checkout my linkedIn page for more Fun @Arshadali</div></center> </div>):(<><div className="Board-row">
+             <button onClick={refreshPage} className="restart">Restart</button><div className="footer">please checkout my linkedIn page for more Fun @Arshadali</div></center> </div>):(<><div className="Board-row">
               <Square onClick={()=>handleClick(0)}value={state[0]} />
                 <Square onClick={()=>handleClick(1)} value={state[1]}/>
                 <Square onClick={()=>handleClick(2)} value={state[2]}/>
