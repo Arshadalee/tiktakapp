@@ -12,10 +12,12 @@
 }
 
 .board-container{
-    margin: 100px !important;
+    margin: 10% !important;
+    border: 2px solid grey;
 }
 .box{
-    border-radius: 30px;
+    border-radius: 30px
+    ;
 }
 .finalPage{
     font-size: 120 px;
@@ -41,4 +43,13 @@
 .GameName{
     font-family: 'Courier New', Courier, monospace;
     margin: 20px;
+}
+.restart1{
+    margin-top: -10%;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: large;
+    color: rgb(111, 0, 255);
+
 }

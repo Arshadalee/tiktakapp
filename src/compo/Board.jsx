@@ -42,7 +42,9 @@ function refreshPage() {
     return<>
             <div className="board-container">
              {isWinner ? (<div className="finalPage"><center><h1 className="winner">and the winner is 🎉 {isWinner}🎊</h1>
-             <button onClick={refreshPage} className="restart">Restart</button><div className="footer">please checkout my linkedIn page  @Arshadali</div></center> </div>):(<>
+             <button onClick={refreshPage} className="restart">Restart</button>
+             <div className="footer">please checkout my linkedIn page  @Arshadali</div>
+             </center> </div>):(<>
              <center><h1 className="GameName">tic tac toe</h1></center>
              
              <div className="Board-row">
@@ -61,8 +63,10 @@ function refreshPage() {
                 <Square onClick={()=>handleClick(8)} value={state[8]}/></div>  
                 
                
-                </> )};
-                </div>
+                </> )}
+
+               
+                </div> <center><button onClick={refreshPage} className="restart1">Restart</button></center>
         </>
 
     

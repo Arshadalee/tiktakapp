@@ -3,7 +3,7 @@
 function Square(props){
    const Sborder={border: '1px solid'
 ,height:"100px",
-width:"70%",
+width:"100%",
 display:"flex",
 justifyContent:"center",
 alignItems:"center",
