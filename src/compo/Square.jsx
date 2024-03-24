@@ -2,11 +2,12 @@
 
 function Square(props){
    const Sborder={border: '1px solid'
-,height:"110px",
-width:"100%",
+,height:"100px",
+width:"70%",
 display:"flex",
 justifyContent:"center",
-alignItems:"center"};
+alignItems:"center",
+borderRadius:"5px"};
 
 const boxstyle={
    borderRadius:"10px",
